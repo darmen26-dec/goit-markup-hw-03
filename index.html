@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link href="./css/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,19 +21,32 @@
     />
   </head>
   <body>
-    <header>
-      <a href="#" class="logo-header"><span>Web</span>Studio</a>
-      <nav>
-        <ul>
-          <li><a href="./index.html" class="menu-nav">Agencja</a></li>
-          <li><a href="./portfolio.html" class="menu-nav">Portfolio</a></li>
-          <li><a href="#" class="menu-nav">Kontakt</a></li>
-        </ul>
-      </nav>
-      <a href="mailto:info@devstudio.com" class="menu-contact"
-        >info@devstudio.com</a
-      >
-      <a href="tel:+48111111111" class="menu-contact">+48 111 111 111</a>
+    <!--HEADER-->
+    <header class="header-line">
+      <div class="container">
+        <div class="header-section">
+          <div class="menu-main">
+            <a href="./index.html" class="logo-header"
+              ><span>Web</span>Studio</a
+            >
+            <nav>
+              <ul class="menu-navigation">
+                <li><a href="./index.html" class="navigation">Agencja</a></li>
+                <li>
+                  <a href="./portfolio.html" class="navigation">Portfolio</a>
+                </li>
+                <li><a href="#" class="navigation">Kontakt</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="menu-contact">
+            <a href="mailto:info@devstudio.com" class="mail"
+              >info@devstudio.com</a
+            >
+            <a href="tel:+48111111111" class="phone">+48 111 111 111</a>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
       <!--HERO-->
@@ -35,9 +55,9 @@
         <button type="button" class="button-hero">Zamów usługę</button>
       </div>
       <!--WHAT WE DO-->
-      <section>
-        <div>
-          <ul>
+      <section class="section">
+        <div class="container">
+          <ul class="description-main">
             <li>
               <p class="heading-describtion">LOREM IPSUM</p>
               <p class="text-describtion">
@@ -68,9 +88,9 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="container">
           <h2>Czym się zajmujemy</h2>
-          <ul>
+          <ul class="what-we-do-flex">
             <li>
               <img
                 src="./images/what-we-do/what-we-do-img1.jpg"
@@ -99,62 +119,66 @@
         </div>
       </section>
       <!--TEAM-->
-      <section class="team-background">
+      <section class="section team-background">
         <h2>Nasz zespół</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/team/team-img1.jpg"
-              alt="smiling man with glasses"
-              width="270"
-              height="260"
-            />
-            <h3>John Doe</h3>
-            <p lang="en" class="job-position">Product Designer</p>
-          </li>
-          <li>
-            <img
-              src="./images/team/team-img2.jpg"
-              alt="smiling woman with glasses"
-              width="270"
-              height="260"
-            />
-            <h3>John Doe</h3>
-            <p lang="en" class="job-position">Frontend Developer</p>
-          </li>
-          <li>
-            <img
-              src="./images/team/team-img3.jpg"
-              alt="smiling brunette"
-              width="270"
-              height="260"
-            />
-            <h3>John Doe</h3>
-            <p lang="en" class="job-position">Marketing</p>
-          </li>
-          <li>
-            <img
-              src="./images/team/team-img4.jpg"
-              alt="brunette with glasses"
-              width="270"
-              height="260"
-            />
-            <h3>John Doe</h3>
-            <p lang="en" class="job-position">UI Designer</p>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="team-flex">
+            <li class="team-images">
+              <img
+                src="./images/team/team-img1.jpg"
+                alt="smiling man with glasses"
+                width="270"
+                height="260"
+              />
+              <h3>John Doe</h3>
+              <p lang="en" class="job-position">Product Designer</p>
+            </li>
+            <li class="team-images">
+              <img
+                src="./images/team/team-img2.jpg"
+                alt="smiling woman with glasses"
+                width="270"
+                height="260"
+              />
+              <h3>John Doe</h3>
+              <p lang="en" class="job-position">Frontend Developer</p>
+            </li>
+            <li class="team-images">
+              <img
+                src="./images/team/team-img3.jpg"
+                alt="smiling brunette"
+                width="270"
+                height="260"
+              />
+              <h3>John Doe</h3>
+              <p lang="en" class="job-position">Marketing</p>
+            </li>
+            <li class="team-images">
+              <img
+                src="./images/team/team-img4.jpg"
+                alt="brunette with glasses"
+                width="270"
+                height="260"
+              />
+              <h3>John Doe</h3>
+              <p lang="en" class="job-position">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!--STOPKA-->
     <footer>
-      <a href="#" class="logo-footer"><span>Web</span>Studio</a>
-      <address>
-        <p class="address">m. Warszawa, Aleje Jerozolimskie 21</p>
-        <a href="mailto:info@example.com" class="footer-contact"
-          >info@example.com</a
-        >
-        <a href="tel:+48111111111" class="footer-contact">+48 111 111 111</a>
-      </address>
+      <div class="container">
+        <a href="./index.html" class="logo-footer"><span>Web</span>Studio</a>
+        <address>
+          <p class="address">m. Warszawa, Aleje Jerozolimskie 21</p>
+          <a href="mailto:info@example.com" class="footer-contact"
+            >info@example.com</a
+          >
+          <a href="tel:+48111111111" class="footer-contact">+48 111 111 111</a>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
