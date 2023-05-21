@@ -13,6 +13,8 @@ body {
   background: var(--background);
   color: var(--color-text);
   max-width: 1600px;
+  padding: 0;
+  margin: 0;
 }
 /* ============ GENERAL ATTRIBUTES AND PROPERTIES ============*/
 .container {
