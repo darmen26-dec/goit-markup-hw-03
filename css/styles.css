@@ -295,21 +295,19 @@ footer {
   padding-left: 0px;
 }
 /* =========================== PROJECTS ===========================*/
-
-/* =========================== rozwiązanie nr 1 ===========================*/
-/* ==== tylko te dziwne przerwy przy obrazkach, nie wiem jak to skasować === */
 .projects-portfolio {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* ustawia odstęp między wierszami i kolumnami */
+  justify-content: space-between;
   gap: 30px;
   padding: 0;
 }
 .projects-portfolio-items {
-  flex-basis: calc((100% - 60px) / 3);
+  flex-basis: calc((100% - 90px) / 3); /* ustawia szerokość elementów */
   background-color: var(--background);
 }
 .card-portfolio {
-  display: grid;
+  display: grid; /* usunęło przerwę między obrazkiem a białym tłem z tekstem poniżej */
   margin: 0;
   width: 370px;
 }
@@ -320,40 +318,3 @@ footer {
   padding: 20px 24px;
   width: 370px;
 }
-
-/* =========================== rozwiązanie nr 2 ===========================*/
-/* ==== tylko po prawo siatki jest ten margines i nie wiem jak go usunąć, próbowałam tymi własnościami last child itp na różne sposoby i jakoś nie idzie ====*/
-/*
-
-.projects-portfolio {
-  display: flex;
-  flex-wrap: wrap; 
-  padding-left: 0;
-}
-.projects-portfolio-items {
-  flex-basis: calc((100% - 60px) / 3);
-  background-color: var(--background);
-}
-.card-portfolio {
-  margin: 0 30px 30px 0;
-  display: grid; 
-  }
-.card-portfolio:nth-child(3, 6, 9) {
-  margin-right: 0px;  
-}
-.projects-figcaption {
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  padding: 20px 24px;
-}
-
-*/
-
-/* Powiedzmy, że notatki: 
-
-flex-wrap: wrap; --> ustawia odstęp między wierszami i kolumnami
-flex-basis: calc((100% - 60px) / 3); --> ustawia szerokość elementów
-display: grid; --> usunęło przerwę między obrazkiem a białym tłem z tekstem poniżej
-
-*/
